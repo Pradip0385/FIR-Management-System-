@@ -17,7 +17,6 @@ void sortbydate();
 void search();
 void toatalfir();
 void update();
-void change();
 int main()
 {
     int ch;
@@ -28,7 +27,7 @@ int main()
                 system("cls");
                 printf("\n\t\t\t**** F.I.R. RECORDS MANAGEMENT SYSTEM ****\t\t\t\n");
                 printf("\t\t\t___________________________________________________\n");
-                printf("\n\t\t\t1.New FIR\n\t\t\t2.Display\n\t\t\t3.Sort By Date(dd/mm/yy)\n\t\t\t4.Search\n\t\t\t5.Total FIR\n\t\t\t6.Update Of FIR's\n\t\t\t7.change\n");
+                printf("\n\t\t\t1.New FIR\n\t\t\t2.Display\n\t\t\t3.Sort By Date(dd/mm/yy)\n\t\t\t4.Search\n\t\t\t5.Total FIR\n\t\t\t6.Update Of FIR's\n\t\t\t\n");
                 printf("\t\t\t___________________________________________________");
                 printf("\n\t\t\tEnter your choice::");
                 scanf("\t\t\t%d",&ch);
@@ -47,8 +46,6 @@ int main()
                     case 5: totalfir();
                             break;
                     case 6:update();
-                            break;
-                    case 7:change();
                             break;
                     default: printf("\nEnter correct choice\n");
                 }
@@ -666,8 +663,3 @@ void totalfir()
     fclose(fp);
 
 }
-void change()
-{
-
-}
-
