@@ -17,7 +17,7 @@ void sortbydate();
 void search1();
 void totalfir();
 void update();
-//void Exit();
+void Exit();
 int main()
 {
     int ch;
